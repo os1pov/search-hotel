@@ -1,0 +1,21 @@
+.layer1 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    background: url("../../../assets/img/IMG_20210312_140957_174.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.layer2 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+}
