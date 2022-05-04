@@ -31,14 +31,14 @@
     color: #424242;
 }
 
-.input__wrapper {
+.auth__input__wrapper {
     display: flex;
     flex-direction: column;
     width: 345px;
     height: 107px;
 }
 
-.input__title {
+.auth__input__title {
     display: flex;
     align-items: center;
     height: 25px;
@@ -51,7 +51,7 @@
     color: #424242;
 }
 
-.input__content {
+.auth__input__content {
     display: flex;
     align-items: center;
     width: 345px;
@@ -71,7 +71,7 @@
     border-radius: 4px;
 }
 
-.input__error {
+.auth__input__error {
     display: flex;
     align-items: center;
     height: 32px;
