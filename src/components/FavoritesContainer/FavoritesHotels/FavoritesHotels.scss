@@ -1,0 +1,8 @@
+.favorites__hotels {
+  display: flex;
+  flex-direction: column;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}

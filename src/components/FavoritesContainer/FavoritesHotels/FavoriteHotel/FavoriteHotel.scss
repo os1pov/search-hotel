@@ -1,0 +1,67 @@
+.favorite__hotel {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-bottom: 1px solid #878787;
+  margin-bottom: 15px;
+}
+
+.hotel__name {
+  width: 300px;
+  margin-bottom: 5px;
+  align-self: center;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 22px;
+
+  color: #424242;
+}
+
+.hotel__date {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
+  color: #878787;
+}
+
+.hotel__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hotel__price {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+}
+
+.hotel__price__text {
+  margin-right: 10px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 22px;
+
+  color: #878787;
+}
+
+.hotel__price__value {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+
+  text-align: right;
+
+  color: #424242;
+}

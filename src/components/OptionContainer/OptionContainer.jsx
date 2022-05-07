@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import { getHotelsAction } from '../../redux/sagas/hotelSaga'
+import { setHotels } from '../../redux/sagas/hotelSaga'
 import './OptionContainer.scss'
 
 const OptionContainer = () => {
@@ -35,7 +35,7 @@ const OptionContainer = () => {
 
     const searchHotels = () => {
         const checkOutDate = getCheckOutDate()
-        dispatch(getHotelsAction(location, checkInDate, checkOutDate))
+        dispatch(setHotels(location, checkInDate, checkOutDate, daysNumber))
     }
 
     useEffect(() => {
