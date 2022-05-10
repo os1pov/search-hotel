@@ -6,7 +6,7 @@ export const getHotels = async (payload) => {
     try {
         const {location, checkIn, checkOut, daysNumber} = payload
         const {data} = await axios.get(URL + `?location=${location}&checkIn=${checkIn}&checkOut=${checkOut}&limit=${10}&currency=rub`)
-        console.log(data)
+
         const hotel = data.map(hotel => ({
             id: hotel.hotelId,
             name: hotel.hotelName,
@@ -16,8 +16,9 @@ export const getHotels = async (payload) => {
             daysNumber,
             isFavorite: false
         }))
+
         return hotel
     } catch (e) {
-
+        return []
     }
 }

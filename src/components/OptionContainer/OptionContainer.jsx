@@ -30,6 +30,7 @@ const OptionContainer = () => {
         const [day, month, year] =  new Date(Date.parse(checkInDate))
             .toLocaleString("ru", {year:"numeric", month:"numeric", day:"numeric"})
             .split(".").map(e => Number(e))
+
         return new Date(year, month - 1, day + +daysNumber).toISOString().substring(0, 10)
     }
 

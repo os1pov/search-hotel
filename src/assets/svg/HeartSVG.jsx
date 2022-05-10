@@ -8,7 +8,7 @@ const HeartSvg = ({hotel}) => {
     const dispatch = useDispatch()
 
     const clickHandler = () => {
-        isFavorite ? dispatch(deleteFavoriteHotel(id)) : dispatch(addFavoriteHotel(hotel))
+        isFavorite ? dispatch(deleteFavoriteHotel(id)) : dispatch(addFavoriteHotel({...hotel, isFavorite: true}))
     }
 
     return (
