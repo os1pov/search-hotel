@@ -66,18 +66,20 @@ const AuthContainer = () => {
 
     return (
         <div className="auth__container">
-            <div className="auth__title">Simple Hotel Check</div>
-            <div className="auth__input__wrapper">
-                <div className="auth__input__title">Логин</div>
-                <input className="auth__input__content" value={login} onChange={e => setLogin(e.target.value)}/>
-                {isLoginError && <div className="auth__input__error">{loginError}</div>}
+            <div className="auth__wrapper">
+                <div className="auth__title">Simple Hotel Check</div>
+                <div className="auth__input__wrapper">
+                    <div className="auth__input__title">Логин</div>
+                    <input className="auth__input__content" value={login} onChange={e => setLogin(e.target.value)}/>
+                    {isLoginError && <div className="auth__input__error">{loginError}</div>}
+                </div>
+                <div className="auth__input__wrapper">
+                    <div className="auth__input__title">Пароль</div>
+                    <input className="auth__input__content" value={password} onChange={e => setPassword(e.target.value)}/>
+                    {isPasswordError && <div className="auth__input__error">{passwordError}</div>}
+                </div>
+                <div className="auth__button" onClick={buttonValidator}>Войти</div>
             </div>
-            <div className="auth__input__wrapper">
-                <div className="auth__input__title">Пароль</div>
-                <input className="auth__input__content" value={password} onChange={e => setPassword(e.target.value)}/>
-                {isPasswordError && <div className="auth__input__error">{passwordError}</div>}
-            </div>
-            <div className="auth__button" onClick={buttonValidator}>Войти</div>
         </div>
     )
 }
